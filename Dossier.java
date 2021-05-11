@@ -34,23 +34,22 @@ public class Dossier extends Element {
 	Scanner clavier= new Scanner(System.in);
 	
 	public void createFolder(String dir) {
-		System.out.println("Entrez le nom du nouveau dossier à créer :");
+		System.out.println("Entrez le nom du nouveau dossier Ã  crÃ©er :");
 		String fold_name = clavier.next();
 		
-		String direc = dir+fold_name;  //c'est le chemin de bureau sur mon ordi. sinon ça peut change ;)
-
+		String direc = dir+fold_name;
         File file = new File(direc);
 
         // true if the directory was created, false otherwise
         if (file.mkdirs()) {
-            System.out.println("Dossier est crée avec succès !");
+            System.out.println("Dossier est crÃ©e avec succÃ¨s !");
         } else {
-            System.out.println("Échec de la création du dossier!");
+            System.out.println("Ã‰chec de la crÃ©ation du dossier!");
         }
 	}
 	
 	public void rename(String dir) {
-		System.out.println("Entrez le nom du dossier à renommer :");
+		System.out.println("Entrez le nom du dossier Ã  renommer :");
 		String old_name = clavier.next();
 		String old_dir = dir + old_name;
 		
@@ -62,9 +61,9 @@ public class Dossier extends Element {
         File new_file = new File(new_dir);
         
         if (old_file.renameTo(new_file)) {
-            System.out.println("Nom du dossier est modifié avec succès !");
+            System.out.println("Nom du dossier est modifiÃ© avec succÃ¨s !");
         } else {
-            System.out.println("Échec de la modification du dossier!");
+            System.out.println("Ã‰chec de la modification du dossier!");
         }
 	}
 	
@@ -75,7 +74,7 @@ public class Dossier extends Element {
 
         File file = new File(direc);
         delete_rec(file);
-        System.out.println("Dossier supprimé avec succès !");
+        System.out.println("Dossier supprimÃ© avec succÃ¨s !");
 	}
 	
 	public void delete_rec(File file) {
