@@ -6,18 +6,22 @@ This Java mini-project is for managing windows files and folders of a given repe
 
 After compiling and executing the ApplicationSystem.java an authentication will be required.
 
-logging in as a user of the ligin.id.txt you'll get the following menu : 
-  1: Afficher les dossiers (nom + taille)
-  2: Afficher les fichiers (nom + taille)
-  3: Créer un dossier
-  4: Modifier fichier ou dossier
-  5: Supprimer dossier ou fichier
-  6: Quitter l'application
+logging in as a user of the login.id.txt you'll get the following menu :
+
+    1: Afficher les dossiers (nom + taille)
+    2: Afficher les fichiers (nom + taille)
+    3: Créer un dossier
+    4: Modifier fichier ou dossier
+    5: Supprimer dossier ou fichier
+    6: Quitter l'application
   
+
+
 logging in as admin you'll get the following menu :
-  1: Inscrire un nouvel utilisateur
-  2: Accèder au menu user
-  3: Quitter l'application
+
+    1: Inscrire un nouvel utilisateur
+    2: Accèder au menu user
+    3: Quitter l'application
   
   
 NB1: The application is accessible from the ApplicationSystem.java file (which contains the main function).
